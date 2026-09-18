@@ -16,40 +16,42 @@ records.)
 A versão estável do pacote pode ser instalada com:
 
 ``` r
+
 install.packages("nomesbr")
 ```
 
 A versão em desenvolvimento pode ser instalada com o seguinte comando :
 
 ``` r
+
 # install.packages("remotes")
-remotes::install_github("ipeadata-lab/nomesbr")
+remotes::install_github("ipea/nomesbr")
 ```
 
 ## Utilização
 
 O pacote **nomesbr** torna disponíveis funções para limpar e simplificar
 nomes.
-[`limpar_nomes()`](https://ipeadata-lab.github.io/nomesbr/reference/limpar_nomes.md)
+[`limpar_nomes()`](https://ipea.github.io/nomesbr/reference/limpar_nomes.md)
 e
-[`simplifica_PARTICULAS_AGNOMES_PATENTES()`](https://ipeadata-lab.github.io/nomesbr/reference/simplifica_PARTICULAS_AGNOMES_PATENTES.md),
+[`simplifica_PARTICULAS_AGNOMES_PATENTES()`](https://ipea.github.io/nomesbr/reference/simplifica_PARTICULAS_AGNOMES_PATENTES.md),
 principais funções do pacote, foram criadas para seu uso em sequência
 nessa ordem.
 
-[`limpar_nomes()`](https://ipeadata-lab.github.io/nomesbr/reference/limpar_nomes.md)
+[`limpar_nomes()`](https://ipea.github.io/nomesbr/reference/limpar_nomes.md)
 recebe como parâmetros d,um data.frame, e s, nome da coluna com os nomes
 a processar. A função cria uma nova coluna, com sufixo ’\_clean’, e gera
 novas colunas com informações dos tipos de limpeza detectados como
 necessários e realizados.
 
-[`simplifica_PARTICULAS_AGNOMES_PATENTES()`](https://ipeadata-lab.github.io/nomesbr/reference/simplifica_PARTICULAS_AGNOMES_PATENTES.md)
+[`simplifica_PARTICULAS_AGNOMES_PATENTES()`](https://ipea.github.io/nomesbr/reference/simplifica_PARTICULAS_AGNOMES_PATENTES.md)
 recebe também, d e s (por padrão para s, ‘nome_clean’) como parâmetros,
 e simplifica partículas repetidas, agnomes e alguma patentes.
 
 A informação (novas colunas) gerada pela função
-[`limpar_nomes()`](https://ipeadata-lab.github.io/nomesbr/reference/limpar_nomes.md)
+[`limpar_nomes()`](https://ipea.github.io/nomesbr/reference/limpar_nomes.md)
 servem como base para a função
-[`tabular_problemas_em_nomes()`](https://ipeadata-lab.github.io/nomesbr/reference/tabular_problemas_em_nomes.md)
+[`tabular_problemas_em_nomes()`](https://ipea.github.io/nomesbr/reference/tabular_problemas_em_nomes.md)
 , que retorna uma tabela resumo dos problemas detectados e ações tomadas
 no sentido da limpeza de nomes.
 

@@ -16,11 +16,11 @@ metaphoneBR algorithm.) Mation (2025)
 
 Useful links:
 
-- <https://github.com/ipeadata-lab/nomesbr>
+- <https://github.com/ipea/nomesbr>
 
-- <https://ipeadata-lab.github.io/nomesbr/>
+- <https://ipea.github.io/nomesbr/>
 
-- Report bugs at <https://github.com/ipeadata-lab/nomesbr/issues>
+- Report bugs at <https://github.com/ipea/nomesbr/issues>
 
 ## Author
 
