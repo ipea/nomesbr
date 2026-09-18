@@ -27,8 +27,10 @@ A função:
 }
 }
 \examples{
+\dontrun{
 processamento_lote(c("Maria", "João", "Ana", "Pedro", "Francisco"))
 nomes_grande_vetor <- sample(c("Maria", "João", "Ana", "Pedro", "Francisco"),100,replace = TRUE)
 processamento_lote(nomes_grande_vetor, chunk_size = 50)
+}
 
 }

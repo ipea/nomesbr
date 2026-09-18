@@ -152,10 +152,8 @@ consulta_nome_em_central <-
 #' calcular_similaridade_nomes("José", "Jose")
 #'
 #' @import stringdist
-#' @import nomesbr
-#' @import data.table
 #' @importFrom dplyr arrange desc
-#' 
+#'
 #' @export
 #' 
 
@@ -320,13 +318,6 @@ sugerir_correcao_nomes <- \(nome_alvo, lista_nomes, threshold_adaptativo = TRUE)
 #'
 #' @seealso \code{\link{calcular_similaridade_nomes}} para detalhes sobre o cálculo do score final.
 #'
-#' @import data.table
-#' @import duckdb
-#' @import DBI
-#' @import stringdist
-#' @import stringi
-#' @importFrom metaphonebr metaphonebr
-#'
 #' @export
 buscar_similares_indice <- \(nome,n_candidatos = 2000,
                              limite_similaridade=0.85,
@@ -458,9 +449,11 @@ buscar_similares_indice <- \(nome,n_candidatos = 2000,
 #' }
 #'
 #' @examples
+#' \dontrun{
 #' processamento_lote(c("Maria", "João", "Ana", "Pedro", "Francisco"))
 #' nomes_grande_vetor <- sample(c("Maria", "João", "Ana", "Pedro", "Francisco"),100,replace = TRUE)
 #' processamento_lote(nomes_grande_vetor, chunk_size = 50)
+#' }
 #'
 #' @export
 
@@ -490,7 +483,7 @@ processamento_lote <- \(vetor_nomes, chunk_size = 10000) {
     
     chunk_result <- lapply(chunk, \(nome) {
       
-      buscar_similares_indice(nome, nomes_unicos)
+      buscar_similares_indice(nome)
       
     })
     

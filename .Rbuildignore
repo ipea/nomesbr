@@ -12,3 +12,6 @@
 ^\.github$
 ^pkgdown/_pkgdown\.yml$
 ^CRAN-SUBMISSION$
+^AGENTS\.md$
+^\.crush$
+^\.Rhistory$

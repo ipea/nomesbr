@@ -22,6 +22,8 @@
 
 
 
+#Validação da função calcular_similaridade_nomes
+#Os scores esperados dependem da codificação fonética do metaphonebr
 validar_abordagem <- \() {
   
   testes <- data.frame(
@@ -50,5 +52,7 @@ validar_abordagem <- \() {
 
 
 testthat::test_that('teste_abordagem_similaridade_nomes',
-          {testthat::expect_equal(validar_abordagem(),c(1,1,0.915,1,0.893))})
+          {
+            skip_if_not_installed("metaphonebr")
+            testthat::expect_equal(validar_abordagem(),c(1,1,0.915,1,0.893))})
 

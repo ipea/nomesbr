@@ -22,7 +22,7 @@ O `data.table` `dt` com colunas `_v2` adicionadas.
 Adiciona Nome Próprio Validado de `nomes_proprios_compostos` .
 }
 \examples{
-\donttest{
+\dontrun{
 dt_nomes <- data.table::data.table(nome=c("MARIA DO SOCORRO SILVA",
 "ANA PAULA DE OLIVEIRA","JOSE DAS FLORES"))
 dt_nomes <- identificar_adicionar_nome_proprio(dt_nomes,"nome")

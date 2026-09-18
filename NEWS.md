@@ -1,3 +1,16 @@
+# nomesbr 0.1.1
+
+* fix CRAN removal: no longer writes to user cache dir during R CMD check
+  (example requiring the 109MB dictionary download moved from \donttest to
+  \dontrun; mocked np2 test no longer triggers a real download)
+* fix test mocking of obter_dic_nomes_proprios_compostos (stubbed a
+  nonexistent function) and skip similarity test when metaphonebr is absent
+* regenerate NAMESPACE/man: export buscar_similares_indice (renamed from
+  buscar_similares_otimizado, whose stale export broke loading)
+* declare stringi in Suggests; wrap processamento_lote examples in \dontrun
+* fix bug in processamento_lote passing names vector as n_candidatos
+
+
 # nomesbr 0.1.0
 
 * Adds function for querying to master names db

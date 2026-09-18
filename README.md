@@ -3,9 +3,9 @@
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/nomesbr)](https://CRAN.R-project.org/package=nomesbr)
-[![check](https://github.com/ipeadata-lab/nomesbr/actions/workflows/check.yaml/badge.svg)](https://github.com/ipeadata-lab/nomesbr/actions/workflows/check.yaml)
+[![check](https://github.com/ipea/nomesbr/actions/workflows/check.yaml/badge.svg)](https://github.com/ipea/nomesbr/actions/workflows/check.yaml)
 [![Codecov test
-coverage](https://codecov.io/gh/ipeadata-lab/nomesbr/graph/badge.svg)](https://app.codecov.io/gh/ipeadata-lab/nomesbr)
+coverage](https://codecov.io/gh/ipea/nomesbr/graph/badge.svg)](https://app.codecov.io/gh/ipea/nomesbr)
 [![CRAN/METACRAN Total
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/nomesbr?color=blue)](https://CRAN.R-project.org/package=nomesbr)
 [![Lifecycle:
@@ -40,7 +40,7 @@ A versão em desenvolvimento pode ser instalada com o seguinte comando :
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("ipeadata-lab/nomesbr")
+remotes::install_github("ipea/nomesbr")
 ```
 
 ## Utilização

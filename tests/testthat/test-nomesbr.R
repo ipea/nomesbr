@@ -118,9 +118,11 @@ test_that('identificar_adicionar_nome_proprio funciona corretamente',{
 
 
 
-test_that('identificar_adicionar_nome_proprio funciona corretamente',{
-  amostra_np2_data <- testthat::test_path("testdata", "amostra_np2_data_para_testes.RDS")
-  mockery::stub(identificar_adicionar_nome_proprio, 'get_np2_data', function() amostra_np2_data)
+#Teste com mock do dicionário np2: garante isolamento do teste sem download
+test_that('identificar_adicionar_nome_proprio funciona com amostra np2 mockada',{
+  skip_if_not_installed("mockery")
+  amostra_np2_path <- testthat::test_path("testdata", "amostra_np2_para_testes.RDS")
+  mockery::stub(identificar_adicionar_nome_proprio, 'obter_dic_nomes_proprios_compostos', function() amostra_np2_path)
   npd <- identificar_adicionar_nome_proprio(dclean,'nome_clean')
   
   expect_equal(

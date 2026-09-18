@@ -11,9 +11,9 @@ Limpa e simplifica nomes de pessoas para auxiliar no pareamento de banco de dado
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/ipeadata-lab/nomesbr}
-  \item \url{https://ipeadata-lab.github.io/nomesbr/}
-  \item Report bugs at \url{https://github.com/ipeadata-lab/nomesbr/issues}
+  \item \url{https://github.com/ipea/nomesbr}
+  \item \url{https://ipea.github.io/nomesbr/}
+  \item Report bugs at \url{https://github.com/ipea/nomesbr/issues}
 }
 
 }

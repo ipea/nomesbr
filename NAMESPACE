@@ -2,7 +2,7 @@
 
 export(add_nome_proprio_to_word1_and_word2p)
 export(add_string_w1_w2_w3_and_w2p)
-export(buscar_similares_otimizado)
+export(buscar_similares_indice)
 export(calcular_similaridade_nomes)
 export(consulta_nome_em_central)
 export(find_and_clean_NAnames_and_extra_spaces)

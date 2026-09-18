@@ -13,7 +13,7 @@ obter_dic_nomes_proprios_compostos <- function() {
   
   # URL do arquivo nomes_proprios_compostos.rds no GitHub Release
   # Substitua pela URL real do seu release!
-  nomes_proprios_compostos_url <- "https://github.com/ipeadata-lab/nomesbr/releases/download/v0.0.1-alpha/nomes_proprios_compostos.rds"
+  nomes_proprios_compostos_url <- "https://github.com/ipea/nomesbr/releases/download/v0.0.1-alpha/nomes_proprios_compostos.rds"
   
   if (!file.exists(nomes_proprios_compostos_file_path)) {
     if (!dir.exists(cache_dir)) {
@@ -25,7 +25,7 @@ obter_dic_nomes_proprios_compostos <- function() {
     
     # Construir a requisição com httr2
     req <- httr2::request(nomes_proprios_compostos_url) |>
-      httr2::req_user_agent(paste0(pkg_name, " (https://github.com/ipeadata-lab/nomesbr)")) 
+      httr2::req_user_agent(paste0(pkg_name, " (https://github.com/ipea/nomesbr)")) 
     
     req <- req|>
       httr2::req_retry(max_tries = 3, is_transient = \(resp) httr2::resp_status(resp) %in% c(401,403,404,429, 500, 502, 503, 504)) |> # Tentar novamente em caso de falhas temporárias
